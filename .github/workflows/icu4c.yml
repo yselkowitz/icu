@@ -180,6 +180,7 @@ jobs:
         env:
           CPPFLAGS: -fsanitize=leak
           LDFLAGS: -fsanitize=leak
+          ASAN_OPTIONS: detect_leaks=1
   # Clang Linux with undefined-behavior sanitizer.
   clang-ubsan:
     runs-on: ubuntu-latest
